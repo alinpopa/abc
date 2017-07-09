@@ -1,0 +1,19 @@
+opam-version: "1.2.2"
+version: "0.1"
+maintainer: "alin.popa@gmail.com"
+authors: ["Alin Popa"]
+homepage: "https://github.com/alinpopa/abc"
+bug-reports: "https://github.com/alinpopa/abc/issues"
+dev-repo: "https://github.com/alinpopa/abc.git"
+license: "LGPL-3 with OCaml linking exception"
+build: [
+  ["jbuilder" "build" "--only" "abc" "--root" "." "-j" jobs "@install"]
+]
+depends: [
+  "core"
+  "lwt"
+  "cohttp"
+  "cohttp.lwt"
+  "cmdliner"
+  "yojson"
+]

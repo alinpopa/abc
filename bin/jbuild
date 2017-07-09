@@ -1,0 +1,9 @@
+(executables
+ ((names (main))
+  (flags (:standard -warn-error A))
+  (libraries (abc))))
+
+(install
+ ((section bin)
+  (package abc)
+  (files ((main.exe as abc)))))

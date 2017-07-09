@@ -1,0 +1,5 @@
+(library
+  ((name abc)
+   (public_name abc)
+   (flags (:standard -warn-error A))
+   (libraries (core lwt cohttp cohttp.lwt yojson))))
